@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Jogo Da Velha Sonic</title>
+</head>
+
+<body>
+        <marquee behavior="scroll" direction="left" height="100" width="100%" scrollamount="40"><img src="img/sonicRun.gif" alt="" class="sonicRun"></marquee>
+    <form>
+        <label for="">Jogar contra o computador</label>
+        <br/>
+        <input type="radio" name="cpu" id="escolhaS" value="Sim" checked="checked">Sim
+        <input type="radio" name="cpu" id="escolhaN" value="Não">Não
+    </form>
+
+        <table cellspacing="7">
+            <tr>
+                <td><img src="img/transp.png" alt="img tranparente" id="c1" class="img"
+                        onclick="return checkjogo(this.id)">
+                </td>
+                <td><img src="img/transp.png" alt="img tranparente" id="c2" class="img"
+                        onclick="return checkjogo(this.id)">
+                </td>
+                <td><img src="img/transp.png" alt="img tranparente" id="c3" class="img"
+                        onclick="return checkjogo(this.id)">
+                </td>
+            </tr>
+            <tr>
+                <td><img src="img/transp.png" alt="img tranparente" id="c4" class="img"
+                        onclick="return checkjogo(this.id)">
+                </td>
+                <td><img src="img/transp.png" alt="img tranparente" id="c5" class="img"
+                        onclick="return checkjogo(this.id)">
+                </td>
+                <td><img src="img/transp.png" alt="img tranparente" id="c6" class="img"
+                        onclick="return checkjogo(this.id)">
+                </td>
+            </tr>
+            <tr>
+                <td><img src="img/transp.png" alt="img tranparente" id="c7" class="img"
+                        onclick="return checkjogo(this.id)">
+                </td>
+                <td><img src="img/transp.png" alt="img tranparente" id="c8" class="img"
+                        onclick="return checkjogo(this.id)">
+                </td>
+                <td><img src="img/transp.png" alt="img tranparente" id="c9" class="img"
+                        onclick="return checkjogo(this.id)">
+                </td>
+            </tr>
+        </table>
+
+    <p id="vencedor"></p>
+
+    <button onclick="resetgame()">Reiniciar  <i class="fa-solid fa-coins"></i></i></button>
+
+    <script src="https://kit.fontawesome.com/293e2d2061.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

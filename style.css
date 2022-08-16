@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(img/back.png);
+    background-size: cover;
+    font-family: calibri;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.sonicRun{
+    height: 100px;
+    width: 100px;
+}
+
+form {
+    text-shadow: 2px 2px 1px #000;
+    font-size: 22px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+table {
+    margin: 30px auto;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+table td {
+    text-align: center;
+    margin: auto;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.4);
+
+}
+
+#vencedor{
+    margin: 50px auto;
+    color: #FFF;
+    width: 17%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 22px;
+    border-radius: 13px;
+}
+
+button{
+    display: block;
+    margin: 30px auto;
+    border: 1px solid transparent;
+    color: #fff;
+    border-radius: 25px;
+    padding: 15px 40px;
+    border-radius: 13;
+    font-family: calibri;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: rgb(8, 50, 236);
+    opacity: 0.65;
+    box-shadow: 10px 5px 5px black;
+}
+
+button:hover{
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+i{
+    color: yellow;
+    font-size: 28px;
+}
+
+button:hover > i{
+    animation: mudar 2s alternate-reverse infinite;
+}
+
+@keyframes mudar{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
